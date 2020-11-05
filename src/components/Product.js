@@ -2,24 +2,23 @@ import React from 'react'
 import '../assets/css/Product.css'
 import StarIcon from '@material-ui/icons/Star';
 
-function Product() {
+function Product({ title, image, price, rating }) {
     return (
         <div className='product'>
             <div className='product__info'>
-                <p>Webcam with Microphone</p>
+                <p>{title}</p>
                 <p className='product__price'>
                     <small>$</small>
-                    <strong>35.92</strong>
+                    <strong>{price}</strong>
                 </p>
                 <div className='product__rating'>
-                    <StarIcon style={{ color: 'red' }} />
+                    {Array(rating).fill().map((_, i) => (
+                        <StarIcon style={{ color: '#E94A4A' }} />
+                    ))}
                 </div>
             </div>
 
-            <img 
-                src='https://images.unsplash.com/photo-1597424876915-41bd694b26da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80'
-                alt=''
-            />
+            <img src={image} alt=''/>
 
             <button>Add to Basket</button>
         </div>
