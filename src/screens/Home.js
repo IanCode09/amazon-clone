@@ -39,10 +39,11 @@ function Home() {
                     />
                     <Product 
                         id='4'
-                        title='AmazonBasics Stainless Steel Insulated Water Bottle with Spout Lid – 20-Ounce, Grey'
-                        price={12.99}
-                        image='https://images-na.ssl-images-amazon.com/images/I/716rz%2B%2BE-WL._AC_SL1500_.jpg'
-                        rating={3}
+                        title='
+                        AmazonBasics Hardside Spinner, Carry-On, Expandable Suitcase Luggage with Wheels, 30 Inch, Navy Blue'
+                        price={96.49}
+                        image='https://images-na.ssl-images-amazon.com/images/I/91RyqYk9mAL._AC_SL1500_.jpg'
+                        rating={4}
                     />
                     <Product 
                         id='5'
